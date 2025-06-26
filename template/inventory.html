@@ -1,0 +1,10 @@
+{% extends 'layout.html' %}
+{% block content %}
+<h2>Inventory</h2>
+<a href="/inventory/add">Add Product</a>
+<ul>
+    {% for p in products %}
+        <li>{{ p.name }} - {{ p.quantity }}</li>
+    {% endfor %}
+</ul>
+{% endblock %}

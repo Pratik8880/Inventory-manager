@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{% block title %}Inventory App{% endblock %}</title>
+</head>
+<body>
+    <h1>Inventory App</h1>
+    <nav>
+        <a href="/inventory">Inventory</a>
+        <a href="/suppliers">Suppliers</a>
+        <a href="/login">Login</a>
+    </nav>
+    {% block content %}{% endblock %}
+</body>
+</html>
